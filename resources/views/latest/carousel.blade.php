@@ -87,7 +87,7 @@
         @endif
         <!--comment-->
 
-        <div class="col-lg-4"><h3>{{ $siteinfos->voltage }} <h6>Voltage</h6></h3></div>
+        <div class="col-lg-4"><h3>{{ $siteinfos->voltage }} <h6>Volts</h6></h3></div>
         <div class="col-xs-12"><h4>DATA AS OF: {{$siteinfos->asof}}</h4></div>
      </div>
       </div>
