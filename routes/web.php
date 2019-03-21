@@ -40,13 +40,15 @@ Route::get('raintips','RaintipsController@values');
 Route::get('datatable/{sitelog}','RaintipsController@show');
 Route::get('rainchart/{rchartid}','RainchartController@view');
 Route::get('siteinfo','DatatablesController@index');
+
 Route::get('editinfo','DatatablesController@editalerts');
 Route::post('editinfo/update','DatatablesController@updatealerts');
+Route::post('editinfo/add','DatatablesController@AddSite');
+
 Route::get('editalerts','DatatablesController@editalertsdata');
 Route::get('export','CsvController@exportdata');
 
-Route::post('addsite/addsitedata', 'DatatablesController@AddSite');
-Route::get('addsite', 'DatatablesController@AddSiteView');
+
 
 Route::post('addlog/addlogdata', 'DatatablesController@AddrawData');
 Route::get('addlog', 'DatatablesController@AddrawDataView');

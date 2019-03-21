@@ -30,7 +30,97 @@
     background-image: url("<?php echo e(URL::asset('img/background.jpg')); ?>");
     background-repeat: no-repeat;
     background-size: cover;
+}
+.RainGray{
+    color: #727882;
+    font-size:90px;
+    text-shadow:
+    -1px -1px 0 #000000,
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+    3px 3px 0 #000000,
+}
+.RainGreen{
+    color: #08cca1;
+    font-size:90px;
+    text-shadow:
+    -1px -1px 0 #000000,
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+    3px 3px 0 #000000,
+}
+.RainBlueGreen{
+    color: #07b5cc;
+    font-size:90px;
+    text-shadow:
+    -1px -1px 0 #000000,
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+    3px 3px 0 #000000,
+}
+.RainBlue{
+    color: #1938ff;
+    font-size:90px;
+    text-shadow:
+    -1px -1px 0 #000000,
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+    3px 3px 0 #000000,
+}
+.RainViolet{
+    color: #8702e0;
+    font-size:90px;
+    text-shadow:
+    -1px -1px 0 #000000,
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+    3px 3px 0 #000000,
+}
+.RainYellow{
+    color: #f4d800;
+    font-size:90px;
+    text-shadow:
+    -1px -1px 0 #000000,
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+    3px 3px 0 #000000,
+}
+.RainOrange{
+    color: #e08701;
+    font-size:90px;
+    text-shadow:
+    -1px -1px 0 #000000,
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+    3px 3px 0 #000000,
+}
+.RainRed{
+    color: #c90000;
+    font-size:90px;
+    text-shadow:
+    -1px -1px 0 #000000,
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+    3px 3px 0 #000000,
 }  
+.CarVoltNot{
+    color: #af0f07;
+    font-size:90px;
+    text-shadow:
+    -1px -1px 0 #000000,
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+    3px 3px 0 #000000,
+}  
+.CarVoltOK{
+  color: #07ffa0;
+  font-size:90px;
+    text-shadow:
+    -1px -1px 0 #000000,
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+    3px 3px 0 #000000,
+}
 h1 { 
     color: #0f4759;
     font-size :40px;

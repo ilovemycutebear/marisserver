@@ -31,6 +31,7 @@
     27 => 'App\\Providers\\RouteServiceProvider',
     28 => 'Yajra\\Datatables\\DatatablesServiceProvider',
     29 => 'Khill\\Lavacharts\\Laravel\\LavachartsServiceProvider',
+    30 => 'Encore\\Admin\\Providers\\AdminServiceProvider',
   ),
   'eager' => 
   array (
@@ -51,6 +52,7 @@
     14 => 'App\\Providers\\RouteServiceProvider',
     15 => 'Yajra\\Datatables\\DatatablesServiceProvider',
     16 => 'Khill\\Lavacharts\\Laravel\\LavachartsServiceProvider',
+    17 => 'Encore\\Admin\\Providers\\AdminServiceProvider',
   ),
   'deferred' => 
   array (

@@ -47,7 +47,7 @@
       <div class="container">
        <div class="row carousel-caption">
         <div class="col-xs-12 text-center"><h5><?php echo e($siteinfos->Site); ?></h5></div>
-        <div class="col-xs-12 text-center"><h7><?php echo e($siteinfos->subname); ?></h7></div>\
+        <div class="col-xs-12 text-center"><h7><?php echo e($siteinfos->subname); ?></h7></div>
         <div class="col-xs-12 text-center"><h8>LAT: <?php echo e($siteinfos->lattitude); ?></h8></div>
         <div class="col-xs-12 text-center"><h8>LONG: <?php echo e($siteinfos->longtitude); ?></h8></div>
         <?php if( $siteinfos->sensor == 1 ): ?>
@@ -68,21 +68,72 @@
         <div class="col-lg-4"><h2>BATTERY</h2></div>
 
         <?php if( $siteinfos->sensor == 1 ): ?>
-        <div class="col-lg-4"><h3><?php echo e($siteinfos->rainten); ?> <h6>milimeters</h6></h3></div>
+            <?php if(($siteinfos->rainten >=0 )&&($siteinfos->rainten <=0.9)): ?>
+            <div class="col-lg-4"><h3><?php echo e($siteinfos->rainten); ?> <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainGray"></span></div>
+            <?php endif; ?>
+            <?php if(($siteinfos->rainten >=1 )&&($siteinfos->rainten <=1.9)): ?>
+            <div class="col-lg-4"><h3><?php echo e($siteinfos->rainten); ?> <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainGreen"></span></div>
+            <?php endif; ?>
+            <?php if(($siteinfos->rainten >=2 )&&($siteinfos->rainten <=9)): ?>
+            <div class="col-lg-4"><h3><?php echo e($siteinfos->rainten); ?> <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainBlueGreen"></span></div>
+            <?php endif; ?>
+            <?php if(($siteinfos->rainten >=10 )&&($siteinfos->rainten <=19)): ?>
+            <div class="col-lg-4"><h3><?php echo e($siteinfos->rainten); ?> <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainBlue"></span></div>
+            <?php endif; ?>
+            <?php if(($siteinfos->rainten >=20 )&&($siteinfos->rainten <=29)): ?>
+            <div class="col-lg-4"><h3><?php echo e($siteinfos->rainten); ?> <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainViolet"></span></div>
+            <?php endif; ?>
+            <?php if(($siteinfos->rainten >=30 )&&($siteinfos->rainten <=39)): ?>
+            <div class="col-lg-4"><h3><?php echo e($siteinfos->rainten); ?> <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainYellow"></span></div>
+            <?php endif; ?>
+            <?php if(($siteinfos->rainten >=40 )&&($siteinfos->rainten <=49)): ?>
+            <div class="col-lg-4"><h3><?php echo e($siteinfos->rainten); ?> <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainOrange"></span></div>
+            <?php endif; ?>
+            <?php if($siteinfos->rainten >=50): ?>
+            <div class="col-lg-4"><h3><?php echo e($siteinfos->rainten); ?> <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainRed"></span></div>
+            <?php endif; ?>
         <div class="col-lg-4"><h3>       </h3></div>
         <?php endif; ?>
 
         <?php if( $siteinfos->sensor == 2 ): ?>
-        <div class="col-lg-4"><h3><?php echo e($siteinfos->water); ?> <h6>meters</h6></h3></div>
+        <?php if(($siteinfos->rainten >=0 )&&($siteinfos->rainten <=0.9)): ?>
+            <div class="col-lg-4"><h3><?php echo e($siteinfos->rainten); ?> <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainGray"></span></div>
+            <?php endif; ?>
+            <?php if(($siteinfos->rainten >=1 )&&($siteinfos->rainten <=1.9)): ?>
+            <div class="col-lg-4"><h3><?php echo e($siteinfos->rainten); ?> <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainGreen"></span></div>
+            <?php endif; ?>
+            <?php if(($siteinfos->rainten >=2 )&&($siteinfos->rainten <=9)): ?>
+            <div class="col-lg-4"><h3><?php echo e($siteinfos->rainten); ?> <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainBlueGreen"></span></div>
+            <?php endif; ?>
+            <?php if(($siteinfos->rainten >=10 )&&($siteinfos->rainten <=19)): ?>
+            <div class="col-lg-4"><h3><?php echo e($siteinfos->rainten); ?> <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainBlue"></span></div>
+            <?php endif; ?>
+            <?php if(($siteinfos->rainten >=20 )&&($siteinfos->rainten <=29)): ?>
+            <div class="col-lg-4"><h3><?php echo e($siteinfos->rainten); ?> <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainViolet"></span></div>
+            <?php endif; ?>
+            <?php if(($siteinfos->rainten >=30 )&&($siteinfos->rainten <=39)): ?>
+            <div class="col-lg-4"><h3><?php echo e($siteinfos->rainten); ?> <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainYellow"></span></div>
+            <?php endif; ?>
+            <?php if(($siteinfos->rainten >=40 )&&($siteinfos->rainten <=49)): ?>
+            <div class="col-lg-4"><h3><?php echo e($siteinfos->rainten); ?> <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainOrange"></span></div>
+            <?php endif; ?>
+            <?php if($siteinfos->rainten >=50): ?>
+            <div class="col-lg-4"><h3><?php echo e($siteinfos->rainten); ?> <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainRed"></span></div>
+            <?php endif; ?>
         <div class="col-lg-4"><h3>     </h3></div>
         <?php endif; ?>
         <?php if( $siteinfos->sensor == 3 ): ?>
-        <div class="col-lg-4"><h3><?php echo e($siteinfos->rainten); ?> <h6>milimeters</h6></h3></div>
+        <div class="col-lg-4"><h3><?php echo e($siteinfos->rainten); ?> <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainGray"></span></div>
         <div class="col-lg-4"><h3><?php echo e($siteinfos->water); ?> <h6>meters</h3></div>
         <?php endif; ?>
         <!--comment-->
-
-        <div class="col-lg-4"><h3><?php echo e($siteinfos->voltage); ?> <h6>Voltage</h6></h3></div>
+        <?php if($siteinfos->voltage >= 12): ?>{
+        <div class="col-lg-4"><h3><?php echo e($siteinfos->voltage); ?> <h6>Volts </h6></h3><span class="glyphicon glyphicon-ok CarVoltOK"></div>
+        <?php endif; ?>
+        
+        <?php if($siteinfos->voltage < 12): ?>{
+          <div class="col-lg-4"><h3><?php echo e($siteinfos->voltage); ?> <h6>Volts </h6></h3><span class="glyphicon glyphicon-warning-sign CarVoltNot"></span></div>
+        <?php endif; ?>
         <div class="col-xs-12"><h4>DATA AS OF: <?php echo e($siteinfos->asof); ?></h4></div>
      </div>
       </div>

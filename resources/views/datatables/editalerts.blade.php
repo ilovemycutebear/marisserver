@@ -21,7 +21,7 @@
       <div class='col-sm-3 col-md-3 col-lg-3 text-right' style='padding-top:7px;'>
       <label for='ID'>ID</label>
       </div>
-      <div class='col-sm-9 col-md-9 col-lg-9 plchldrnamei'>
+      <div class='col-sm-9 col-md-9 col-lg-9 plchldrnamea'>
       
       </div>
       <div style='clear:both;'> 
@@ -32,17 +32,6 @@
       <div class='col-sm-3 col-md-3 col-lg-3 text-right' style='padding-top:7px;'>
       <label for='SITENAME'>SITENAME</label>
       </div>
-      <div class='col-sm-9 col-md-9 col-lg-9 plchldrname'>
-      
-      </div>
-      <div style='clear:both;'> 
-      </div>
-      </div>
-
-            <div class='form-group'>
-      <div class='col-sm-3 col-md-3 col-lg-3 text-right' style='padding-top:7px;'>
-      <label for='LAT'>LAT</label>
-      </div>
       <div class='col-sm-9 col-md-9 col-lg-9 plchldrnameb'>
       
       </div>
@@ -52,7 +41,7 @@
 
             <div class='form-group'>
       <div class='col-sm-3 col-md-3 col-lg-3 text-right' style='padding-top:7px;'>
-      <label for='LONG'>LONG</label>
+      <label for='SUBNAME'>SUB NAME</label>
       </div>
       <div class='col-sm-9 col-md-9 col-lg-9 plchldrnamec'>
       
@@ -63,7 +52,7 @@
 
             <div class='form-group'>
       <div class='col-sm-3 col-md-3 col-lg-3 text-right' style='padding-top:7px;'>
-      <label for='ALERT'>ALERT</label>
+      <label for='LAT'>LATTITUDE</label>
       </div>
       <div class='col-sm-9 col-md-9 col-lg-9 plchldrnamed'>
       
@@ -74,7 +63,7 @@
 
             <div class='form-group'>
       <div class='col-sm-3 col-md-3 col-lg-3 text-right' style='padding-top:7px;'>
-      <label for='ALARM'>ALARM</label>
+      <label for='LONGTITUDE'>LONGTITUDE</label>
       </div>
       <div class='col-sm-9 col-md-9 col-lg-9 plchldrnamee'>
       
@@ -85,7 +74,7 @@
 
             <div class='form-group'>
       <div class='col-sm-3 col-md-3 col-lg-3 text-right' style='padding-top:7px;'>
-      <label for='CRITICAL'>CRITICAL</label>
+      <label for='SITELEV'>ELEVATION</label>
       </div>
       <div class='col-sm-9 col-md-9 col-lg-9 plchldrnamef'>
       
@@ -96,7 +85,7 @@
 
             <div class='form-group'>
       <div class='col-sm-3 col-md-3 col-lg-3 text-right' style='padding-top:7px;'>
-      <label for='TBM'>TBM</label>
+      <label for='SENSORTYPE'>TYPE</label>
       </div>
       <div class='col-sm-9 col-md-9 col-lg-9 plchldrnameg'>
       
@@ -107,7 +96,7 @@
 
             <div class='form-group'>
       <div class='col-sm-3 col-md-3 col-lg-3 text-right' style='padding-top:7px;'>
-      <label for='Y'>Y</label>
+      <label for='ALERT'>ALERT</label>
       </div>
       <div class='col-sm-9 col-md-9 col-lg-9 plchldrnameh'>
       
@@ -115,7 +104,94 @@
       <div style='clear:both;'> 
       </div>
       </div>
-</form>
+
+            <div class='form-group'>
+      <div class='col-sm-3 col-md-3 col-lg-3 text-right' style='padding-top:7px;'>
+      <label for='ALARM'>ALARM</label>
+      </div>
+      <div class='col-sm-9 col-md-9 col-lg-9 plchldrnamei'>
+      
+      </div>
+      <div style='clear:both;'> 
+      </div>
+      </div>
+
+              <div class='form-group'>
+      <div class='col-sm-3 col-md-3 col-lg-3 text-right' style='padding-top:7px;'>
+      <label for='CRITICAL'>CRITICAL</label>
+      </div>
+      <div class='col-sm-9 col-md-9 col-lg-9 plchldrnamej'>
+      
+      </div>
+      <div style='clear:both;'> 
+      </div>
+      </div>
+
+                  <div class='form-group'>
+      <div class='col-sm-3 col-md-3 col-lg-3 text-right' style='padding-top:7px;'>
+      <label for='CREATED_AT'>CREATED_AT</label>
+      </div>
+      <div class='col-sm-9 col-md-9 col-lg-9 plchldrnamek'>
+      
+      </div>
+      <div style='clear:both;'> 
+      </div>
+      </div>
+
+                  <div class='form-group'>
+      <div class='col-sm-3 col-md-3 col-lg-3 text-right' style='padding-top:7px;'>
+      <label for='UPDATED_AT'>UPDATED_AT</label>
+      </div>
+      <div class='col-sm-9 col-md-9 col-lg-9 plchldrnamel'>
+      
+      </div>
+      <div style='clear:both;'> 
+      </div>
+      </div>
+
+                  <div class='form-group'>
+      <div class='col-sm-3 col-md-3 col-lg-3 text-right' style='padding-top:7px;'>
+      <label for='PIC'>PIC</label>
+      </div>
+      <div class='col-sm-9 col-md-9 col-lg-9 plchldrnamem'>
+      
+      </div>
+      <div style='clear:both;'> 
+      </div>
+      </div>
+
+                  <div class='form-group'>
+      <div class='col-sm-3 col-md-3 col-lg-3 text-right' style='padding-top:7px;'>
+      <label for='B_CONSTANT'>B_CONSTANT</label>
+      </div>
+      <div class='col-sm-9 col-md-9 col-lg-9 plchldrnamen'>
+      
+      </div>
+      <div style='clear:both;'> 
+      </div>
+      </div>
+
+                  <div class='form-group'>
+      <div class='col-sm-3 col-md-3 col-lg-3 text-right' style='padding-top:7px;'>
+      <label for='WLEVEL_ZERO'>WLEVEL_ZERO</label>
+      </div>
+      <div class='col-sm-9 col-md-9 col-lg-9 plchldrnameo'>
+      
+      </div>
+      <div style='clear:both;'> 
+      </div>
+      </div>
+
+                  <div class='form-group'>
+      <div class='col-sm-3 col-md-3 col-lg-3 text-right' style='padding-top:7px;'>
+      <label for='A_VARIABLE'>A_VARIABLE</label>
+      </div>
+      <div class='col-sm-9 col-md-9 col-lg-9 plchldrnamep'>
+      
+      </div>
+      <div style='clear:both;'> 
+      </div>
+      </div>
     
 <!--*********TABS**************-->
    
@@ -130,7 +206,215 @@
     </div>
 
   </div>
+
+  <!--add modal-->
+
+    <div class="modal fade" id="myAddModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" >
+        <div class="modal-body">
+        <!--*********TABS**************-->
+        <ul class="nav nav-tabs" id="myTab">
+               <div id="table_latest" class="alert-success text-center"><h4>EDIT INFORMATION</h4></div>
+
+      </ul>
+      <form method= "POST" action= "editinfo/add">
+      {{ csrf_field() }}
+      <div class='form-group' >
+      <div class='col-sm-3 col-md-3 col-lg-3 text-right' style='padding-top:7px;'>
+      <label for='ID'>ID</label>
+      </div>
+      <div class='col-sm-9 col-md-9 col-lg-9 plchldrnamea'>
+      
+      </div>
+      <div style='clear:both;'> 
+      </div>
+      </div>
+
+      <div class='form-group'>
+      <div class='col-sm-3 col-md-3 col-lg-3 text-right' style='padding-top:7px;'>
+      <label for='SITENAME'>SITENAME</label>
+      </div>
+      <div class='col-sm-9 col-md-9 col-lg-9 plchldrnameb'>
+      
+      </div>
+      <div style='clear:both;'> 
+      </div>
+      </div>
+
+            <div class='form-group'>
+      <div class='col-sm-3 col-md-3 col-lg-3 text-right' style='padding-top:7px;'>
+      <label for='SUBNAME'>SUB NAME</label>
+      </div>
+      <div class='col-sm-9 col-md-9 col-lg-9 plchldrnamec'>
+      
+      </div>
+      <div style='clear:both;'> 
+      </div>
+      </div>
+
+            <div class='form-group'>
+      <div class='col-sm-3 col-md-3 col-lg-3 text-right' style='padding-top:7px;'>
+      <label for='LAT'>LATTITUDE</label>
+      </div>
+      <div class='col-sm-9 col-md-9 col-lg-9 plchldrnamed'>
+      
+      </div>
+      <div style='clear:both;'> 
+      </div>
+      </div>
+
+            <div class='form-group'>
+      <div class='col-sm-3 col-md-3 col-lg-3 text-right' style='padding-top:7px;'>
+      <label for='LONGTITUDE'>LONGTITUDE</label>
+      </div>
+      <div class='col-sm-9 col-md-9 col-lg-9 plchldrnamee'>
+      
+      </div>
+      <div style='clear:both;'> 
+      </div>
+      </div>
+
+            <div class='form-group'>
+      <div class='col-sm-3 col-md-3 col-lg-3 text-right' style='padding-top:7px;'>
+      <label for='SITELEV'>ELEVATION</label>
+      </div>
+      <div class='col-sm-9 col-md-9 col-lg-9 plchldrnamef'>
+      
+      </div>
+      <div style='clear:both;'> 
+      </div>
+      </div>
+
+            <div class='form-group'>
+      <div class='col-sm-3 col-md-3 col-lg-3 text-right' style='padding-top:7px;'>
+      <label for='SENSORTYPE'>TYPE</label>
+      </div>
+      <div class='col-sm-9 col-md-9 col-lg-9 plchldrnameg'>
+      
+      </div>
+      <div style='clear:both;'> 
+      </div>
+      </div>
+
+            <div class='form-group'>
+      <div class='col-sm-3 col-md-3 col-lg-3 text-right' style='padding-top:7px;'>
+      <label for='ALERT'>ALERT</label>
+      </div>
+      <div class='col-sm-9 col-md-9 col-lg-9 plchldrnameh'>
+      
+      </div>
+      <div style='clear:both;'> 
+      </div>
+      </div>
+
+            <div class='form-group'>
+      <div class='col-sm-3 col-md-3 col-lg-3 text-right' style='padding-top:7px;'>
+      <label for='ALARM'>ALARM</label>
+      </div>
+      <div class='col-sm-9 col-md-9 col-lg-9 plchldrnamei'>
+      
+      </div>
+      <div style='clear:both;'> 
+      </div>
+      </div>
+
+              <div class='form-group'>
+      <div class='col-sm-3 col-md-3 col-lg-3 text-right' style='padding-top:7px;'>
+      <label for='CRITICAL'>CRITICAL</label>
+      </div>
+      <div class='col-sm-9 col-md-9 col-lg-9 plchldrnamej'>
+      
+      </div>
+      <div style='clear:both;'> 
+      </div>
+      </div>
+
+                  <div class='form-group'>
+      <div class='col-sm-3 col-md-3 col-lg-3 text-right' style='padding-top:7px;'>
+      <label for='CREATED_AT'>CREATED_AT</label>
+      </div>
+      <div class='col-sm-9 col-md-9 col-lg-9 plchldrnamek'>
+      
+      </div>
+      <div style='clear:both;'> 
+      </div>
+      </div>
+
+                  <div class='form-group'>
+      <div class='col-sm-3 col-md-3 col-lg-3 text-right' style='padding-top:7px;'>
+      <label for='UPDATED_AT'>UPDATED_AT</label>
+      </div>
+      <div class='col-sm-9 col-md-9 col-lg-9 plchldrnamel'>
+      
+      </div>
+      <div style='clear:both;'> 
+      </div>
+      </div>
+
+                  <div class='form-group'>
+      <div class='col-sm-3 col-md-3 col-lg-3 text-right' style='padding-top:7px;'>
+      <label for='PIC'>PIC</label>
+      </div>
+      <div class='col-sm-9 col-md-9 col-lg-9 plchldrnamem'>
+      
+      </div>
+      <div style='clear:both;'> 
+      </div>
+      </div>
+
+                  <div class='form-group'>
+      <div class='col-sm-3 col-md-3 col-lg-3 text-right' style='padding-top:7px;'>
+      <label for='B_CONSTANT'>B_CONSTANT</label>
+      </div>
+      <div class='col-sm-9 col-md-9 col-lg-9 plchldrnamen'>
+      
+      </div>
+      <div style='clear:both;'> 
+      </div>
+      </div>
+
+                  <div class='form-group'>
+      <div class='col-sm-3 col-md-3 col-lg-3 text-right' style='padding-top:7px;'>
+      <label for='WLEVEL_ZERO'>WLEVEL_ZERO</label>
+      </div>
+      <div class='col-sm-9 col-md-9 col-lg-9 plchldrnameo'>
+      
+      </div>
+      <div style='clear:both;'> 
+      </div>
+      </div>
+
+                  <div class='form-group'>
+      <div class='col-sm-3 col-md-3 col-lg-3 text-right' style='padding-top:7px;'>
+      <label for='A_VARIABLE'>A_VARIABLE</label>
+      </div>
+      <div class='col-sm-9 col-md-9 col-lg-9 plchldrnamep'>
+      
+      </div>
+      <div style='clear:both;'> 
+      </div>
+      </div>
+    
+<!--*********TABS**************-->
+   
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">ADD SITE</button>
+      </div>
+      </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!--add modal-->
 </div>
+
+
 <!--**************************************MODAL********************************************-->
  <!--*********TABLES**************-->
        <div id="table_latest" class="alert-info text-center"><h4>SITE INFORMATION</h4></div>
@@ -140,30 +424,137 @@
 @push('map-scripts')
 <script>
 $( document ).ready(function() {
-    drawlatestable();
+   edittableofInfo();
 });
-function drawlatestable(){
+function edittableofInfo(){
    var table = $('#inform-table').DataTable({
         processing: true,
          searching: false,
          paging: false,
         "ajax": "{{URL::asset('editalerts')}}",
-        "columns": [
-            { "data": 'id', "id": 'id', "title":'ID' },
+          "columns": [
+            { "data": 'id', "name": 'id', "title":'ID' },
             { "data": 'name', "name": 'name', "title":'SITE NAME' },
+            { "data": 'subname', "name": 'subname', "title":'SUB NAME' },
             { "data": 'sitelat', "name": 'lat', "title":'LAT' },
             { "data": 'sitelong', "name": 'long' ,"title":'LONG' },
+            { "data": 'sitelev', "name": 'sitelev' ,"title":'ELEVATION' },
+            { "data": 'sensortype', "name": 'sensortype' ,"title":'TYPE' },
              { "data": 'wlalert', "name": 'alert', "title":'ALERT' },
             { "data": 'wlalarm', "name": 'alarm', "title":'ALARM' },
            { "data": 'wlcritical', "name": 'critical', "title":'CRITICAL' },
-           { "data": 'wltbm', "name": 'tbm', "title":'TBM' },
-           { "data": 'wly', "name": 'ylevel', "title":'Y' }
+           { "data": 'created_at', "name": 'created_at', "title":'CREATED_AT' },
+           { "data": 'updated_at', "name": 'updated_at', "title":'UPDATED_AT' },
+           { "data": 'pic', "name": 'pic', "title":'PIC' },
+           { "data": 'Bconstant', "name": 'Bconstant', "title":'B_CONSTANT' },
+           { "data": 'Wlevelzero', "name": 'Wlevelzero', "title":'WLEVEL_ZERO' },
+           { "data": 'Avariable', "name": 'Avariable', "title":'A_VARIABLE' },
         ],
     "dom": 'Bfrtip',        // element order: NEEDS BUTTON CONTAINER (B) ****
     "select": 'single',     // enable single row selection
     "responsive": true,     // enable responsiveness
     "altEditor": true,      // Enable altEditor ****
-    buttons: [
+    buttons: [{
+            text: 'Add',
+            name: 'add',        // do not change name
+                   action: function () {
+                        var data = "";
+                         var datab = "";
+                          var datac = "";
+                           var datad = "";
+                            var datae = "";
+                             var dataf = "";
+                              var datag = "";
+                               var datah = "";
+                               var datai = "";
+                               var dataj = "";
+                               var datak = "";
+                               var datal = "";
+                               var datam = "";
+                               var datan = "";
+                               var datao = "";
+                               var datap = "";
+                         
+
+                    $('#myAddModal').modal('show');
+                    $('#myAddModal').on('shown.bs.modal', function () {
+                      dataa = "<input type='text'  id='siteid1' name='siteid' placeholder='ID AUTO ASSIGN' style='overflow:hidden'  readonly = 'readonly' class='form-control  form-control-sm' value=''>";
+
+                        datab = "<input type='text'  id='sitename1' name='sitename' placeholder='...' style='overflow:hidden'  class='form-control  form-control-sm' value=''>";
+
+                         datac = "<input type='text'  id='subname1' name='subname' placeholder='...' style='overflow:hidden'  class='form-control  form-control-sm' value=''>";
+
+                         datad = "<input type='text'  id='sitelat1' name='sitelat' placeholder='...' style='overflow:hidden'  class='form-control  form-control-sm' value=''>";
+
+                         datae = "<input type='text'  id='sitelong1' name='sitelong' placeholder='...' style='overflow:hidden'  class='form-control  form-control-sm' value=''>";
+
+                         dataf = "<input type='text'  id='sitelev1' name='sitelev' placeholder='...' style='overflow:hidden'  class='form-control  form-control-sm' value=''>";
+
+                         datag = "<input type='text'  id='sensortype1' name='sensortype' placeholder='...' style='overflow:hidden'  class='form-control  form-control-sm' value=''>";
+
+
+                         datah = "<input type='text'  id='wlalert1' name='wlalert' placeholder='...' style='overflow:hidden'  class='form-control  form-control-sm' value=''>";
+
+                         datai = "<input type='text'  id='wlalarm1' name='wlalarm' placeholder='...' style='overflow:hidden'  class='form-control  form-control-sm' value=''>";
+
+                         dataj = "<input type='text'  id='wlcritical1' name='wlcritical' placeholder='...' style='overflow:hidden'  class='form-control  form-control-sm' value=''>";
+
+                         datak = "<input type='text' id='datetimepicker1' name='created_at' placeholder='...' style='overflow:hidden'  class='form-control  form-control-sm' readonly = 'readonly' value=''>";
+
+                          datal = "<input type='text'  id='datetimepicker2' name='updated_at' placeholder='...' style='overflow:hidden'  class='form-control  form-control-sm' readonly = 'readonly' value=''>";
+
+                         datam = "<input type='text'  id='pic1' name='pic' placeholder='...' style='overflow:hidden'  class='form-control  form-control-sm' value=''>";
+
+                         datan = "<input type='text'  id='Bconstant1' name='Bconstant' placeholder='...' style='overflow:hidden'  class='form-control  form-control-sm' value=''>";
+
+                         datao = "<input type='text'  id='Wlevelzero1' name='Wlevelzero' placeholder='...' style='overflow:hidden'  class='form-control  form-control-sm' value=''>";
+
+                         datap = "<input type='text'  id='Avariable1' name='Avariable' placeholder='...' style='overflow:hidden'  class='form-control  form-control-sm' value=''>";
+
+                     
+            
+                    $( ".plchldrnamea" ).html(dataa);
+                    $( ".plchldrnameb" ).html(datab);
+                    $( ".plchldrnamec" ).html(datac);
+                    $( ".plchldrnamed" ).html(datad);
+                    $( ".plchldrnamee" ).html(datae);
+                    $( ".plchldrnamef" ).html(dataf);
+                    $( ".plchldrnameg" ).html(datag);
+                    $( ".plchldrnameh" ).html(datah);
+                    $( ".plchldrnamei" ).html(datai);
+                    $( ".plchldrnamej" ).html(dataj);
+                    $( ".plchldrnamek" ).html(datak);
+                    $( ".plchldrnamel" ).html(datal);
+                    $( ".plchldrnamem" ).html(datam);
+                    $( ".plchldrnamen" ).html(datan);
+                    $( ".plchldrnameo" ).html(datao);
+                    $( ".plchldrnamep" ).html(datap);
+
+                    
+                    });
+
+                    $('#myModal').on('hidden.bs.modal', function () {
+                    $( ".plchldrnamea" ).empty();
+                    $( ".plchldrnameb" ).empty();
+                    $( ".plchldrnamec" ).empty();
+                    $( ".plchldrnamed" ).empty();
+                    $( ".plchldrnamee" ).empty();
+                    $( ".plchldrnamef" ).empty();
+                    $( ".plchldrnameg" ).empty();
+                    $( ".plchldrnameh" ).empty();
+                    $( ".plchldrnamei" ).empty();
+                    $( ".plchldrnamej" ).empty();
+                    $( ".plchldrnamek" ).empty();
+                    $( ".plchldrnamel" ).empty();
+                    $( ".plchldrnamem" ).empty();
+                    $( ".plchldrnamen" ).empty();
+                    $( ".plchldrnameo" ).empty();
+                    $( ".plchldrnamep" ).empty();
+
+                            });
+                     
+                }// action: function
+    },
     {
       extend: 'selected', // Bind to Selected row
       text: 'Edit',
@@ -180,21 +571,53 @@ function drawlatestable(){
                               var datag = "";
                                var datah = "";
                                var datai = "";
+                               var dataj = "";
+                               var datak = "";
+                               var datal = "";
+                               var datam = "";
+                               var datan = "";
+                               var datao = "";
+                               var datap = "";
                          
 
                     $('#myModal').modal('show');
                     $('#myModal').on('shown.bs.modal', function () {
-                      datai = "<input type='text'  id='" + count[0].id + "' name='siteid' placeholder='...' style='overflow:hidden'  readonly = 'readonly' class='form-control  form-control-sm' value='" + count[0].id + "'>";
-                        data = "<input type='text'  id='" + count[0].name + "' name='sitename' placeholder='...' style='overflow:hidden'  class='form-control  form-control-sm' value='" + count[0].name + "'>";
-                         datab = "<input type='text'  id='" + count[0].sitelat + "' name='sitelat' placeholder='...' style='overflow:hidden'  class='form-control  form-control-sm' value='" + count[0].sitelat + "'>";
-                         datac = "<input type='text'  id='" + count[0].sitelong + "' name='sitelong' placeholder='...' style='overflow:hidden'  class='form-control  form-control-sm' value='" + count[0].sitelong + "'>";
-                         datad = "<input type='text'  id='" + count[0].wlalert + "' name='wlalert' placeholder='...' style='overflow:hidden'  class='form-control  form-control-sm' value='" + count[0].wlalert + "'>";
-                         datae = "<input type='text'  id='" + count[0].wlalarm + "' name='wlalarm' placeholder='...' style='overflow:hidden'  class='form-control  form-control-sm' value='" + count[0].wlalarm + "'>";
-                         dataf = "<input type='text'  id='" + count[0].wlcritical + "' name='wlcritical' placeholder='...' style='overflow:hidden'  class='form-control  form-control-sm' value='" + count[0].wlcritical + "'>";
-                         datag = "<input type='text'  id='" + count[0].wltbm + "' name='wltbm' placeholder='...' style='overflow:hidden'  class='form-control  form-control-sm' value='" + count[0].wltbm + "'>";
-                         datah = "<input type='text'  id='" + count[0].wly + "' name='wly' placeholder='...' style='overflow:hidden'  class='form-control  form-control-sm' value='" + count[0].wly + "'>";
-                     $( ".plchldrnamei" ).html(datai);
-                    $( ".plchldrname" ).html(data);
+                      dataa = "<input type='text'  id='" + count[0].id + "' name='siteid' placeholder='...' style='overflow:hidden'  readonly = 'readonly' class='form-control  form-control-sm' value='" + count[0].id + "'>";
+
+                        datab = "<input type='text'  id='" + count[0].name + "' name='sitename' placeholder='...' style='overflow:hidden'  class='form-control  form-control-sm' value='" + count[0].name + "'>";
+
+                         datac = "<input type='text'  id='" + count[0].subname + "' name='subname' placeholder='...' style='overflow:hidden'  class='form-control  form-control-sm' value='" + count[0].subname + "'>";
+
+                         datad = "<input type='text'  id='" + count[0].sitelat + "' name='sitelat' placeholder='...' style='overflow:hidden'  class='form-control  form-control-sm' value='" + count[0].sitelat + "'>";
+
+                         datae = "<input type='text'  id='" + count[0].sitelong + "' name='sitelong' placeholder='...' style='overflow:hidden'  class='form-control  form-control-sm' value='" + count[0].sitelong + "'>";
+
+                         dataf = "<input type='text'  id='" + count[0].sitelev + "' name='sitelev' placeholder='...' style='overflow:hidden'  class='form-control  form-control-sm' value='" + count[0].sitelev + "'>";
+
+                         datag = "<input type='text'  id='" + count[0].sensortype + "' name='sensortype' placeholder='...' style='overflow:hidden'  class='form-control  form-control-sm' value='" + count[0].sensortype + "'>";
+
+
+                         datah = "<input type='text'  id='" + count[0].wlalert + "' name='wlalert' placeholder='...' style='overflow:hidden'  class='form-control  form-control-sm' value='" + count[0].wlalert + "'>";
+
+                         datai = "<input type='text'  id='" + count[0].wlalarm + "' name='wlalarm' placeholder='...' style='overflow:hidden'  class='form-control  form-control-sm' value='" + count[0].wlalarm + "'>";
+
+                         dataj = "<input type='text'  id='" + count[0].wlcritical + "' name='wlcritical' placeholder='...' style='overflow:hidden'  class='form-control  form-control-sm' value='" + count[0].wlcritical + "'>";
+
+                         datak = "<input type='text' id='datetimepicker1' name='created_at' placeholder='...' style='overflow:hidden'  class='form-control  form-control-sm' readonly = 'readonly' value='" + count[0].created_at + "'>";
+
+                          datal = "<input type='text'  id='datetimepicker2' name='updated_at' placeholder='...' style='overflow:hidden'  class='form-control  form-control-sm' readonly = 'readonly' value='" + count[0].updated_at + "'>";
+
+                         datam = "<input type='text'  id='" + count[0].pic + "' name='pic' placeholder='...' style='overflow:hidden'  class='form-control  form-control-sm' value='" + count[0].pic + "'>";
+
+                         datan = "<input type='text'  id='" + count[0].Bconstant + "' name='Bconstant' placeholder='...' style='overflow:hidden'  class='form-control  form-control-sm' value='" + count[0].Bconstant + "'>";
+
+                         datao = "<input type='text'  id='" + count[0].Wlevelzero + "' name='Wlevelzero' placeholder='...' style='overflow:hidden'  class='form-control  form-control-sm' value='" + count[0].Wlevelzero + "'>";
+
+                         datap = "<input type='text'  id='" + count[0].Avariable + "' name='Avariable' placeholder='...' style='overflow:hidden'  class='form-control  form-control-sm' value='" + count[0].Avariable + "'>";
+
+                     
+            
+                    $( ".plchldrnamea" ).html(dataa);
                     $( ".plchldrnameb" ).html(datab);
                     $( ".plchldrnamec" ).html(datac);
                     $( ".plchldrnamed" ).html(datad);
@@ -202,10 +625,20 @@ function drawlatestable(){
                     $( ".plchldrnamef" ).html(dataf);
                     $( ".plchldrnameg" ).html(datag);
                     $( ".plchldrnameh" ).html(datah);
+                    $( ".plchldrnamei" ).html(datai);
+                    $( ".plchldrnamej" ).html(dataj);
+                    $( ".plchldrnamek" ).html(datak);
+                    $( ".plchldrnamel" ).html(datal);
+                    $( ".plchldrnamem" ).html(datam);
+                    $( ".plchldrnamen" ).html(datan);
+                    $( ".plchldrnameo" ).html(datao);
+                    $( ".plchldrnamep" ).html(datap);
+
+                    
                     });
 
                     $('#myModal').on('hidden.bs.modal', function () {
-                    $( ".plchldrname" ).empty();
+                    $( ".plchldrnamea" ).empty();
                     $( ".plchldrnameb" ).empty();
                     $( ".plchldrnamec" ).empty();
                     $( ".plchldrnamed" ).empty();
@@ -214,9 +647,16 @@ function drawlatestable(){
                     $( ".plchldrnameg" ).empty();
                     $( ".plchldrnameh" ).empty();
                     $( ".plchldrnamei" ).empty();
+                    $( ".plchldrnamej" ).empty();
+                    $( ".plchldrnamek" ).empty();
+                    $( ".plchldrnamel" ).empty();
+                    $( ".plchldrnamem" ).empty();
+                    $( ".plchldrnamen" ).empty();
+                    $( ".plchldrnameo" ).empty();
+                    $( ".plchldrnamep" ).empty();
 
                             });
-
+                     
                 }// action: function
     }]
     });

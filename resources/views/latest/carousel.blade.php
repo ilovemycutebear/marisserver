@@ -52,7 +52,7 @@
       <div class="container">
        <div class="row carousel-caption">
         <div class="col-xs-12 text-center"><h5>{{ $siteinfos->Site }}</h5></div>
-        <div class="col-xs-12 text-center"><h7>{{ $siteinfos->subname }}</h7></div>\
+        <div class="col-xs-12 text-center"><h7>{{ $siteinfos->subname }}</h7></div>
         <div class="col-xs-12 text-center"><h8>LAT: {{ $siteinfos->lattitude }}</h8></div>
         <div class="col-xs-12 text-center"><h8>LONG: {{ $siteinfos->longtitude }}</h8></div>
         @if( $siteinfos->sensor == 1 )
@@ -73,21 +73,72 @@
         <div class="col-lg-4"><h2>BATTERY</h2></div>
 
         @if( $siteinfos->sensor == 1 )
-        <div class="col-lg-4"><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3></div>
+            @if(($siteinfos->rainten >=0 )&&($siteinfos->rainten <=0.9))
+            <div class="col-lg-4"><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainGray"></span></div>
+            @endif
+            @if(($siteinfos->rainten >=1 )&&($siteinfos->rainten <=1.9))
+            <div class="col-lg-4"><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainGreen"></span></div>
+            @endif
+            @if(($siteinfos->rainten >=2 )&&($siteinfos->rainten <=9))
+            <div class="col-lg-4"><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainBlueGreen"></span></div>
+            @endif
+            @if(($siteinfos->rainten >=10 )&&($siteinfos->rainten <=19))
+            <div class="col-lg-4"><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainBlue"></span></div>
+            @endif
+            @if(($siteinfos->rainten >=20 )&&($siteinfos->rainten <=29))
+            <div class="col-lg-4"><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainViolet"></span></div>
+            @endif
+            @if(($siteinfos->rainten >=30 )&&($siteinfos->rainten <=39))
+            <div class="col-lg-4"><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainYellow"></span></div>
+            @endif
+            @if(($siteinfos->rainten >=40 )&&($siteinfos->rainten <=49))
+            <div class="col-lg-4"><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainOrange"></span></div>
+            @endif
+            @if($siteinfos->rainten >=50)
+            <div class="col-lg-4"><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainRed"></span></div>
+            @endif
         <div class="col-lg-4"><h3>       </h3></div>
         @endif
 
         @if( $siteinfos->sensor == 2 )
-        <div class="col-lg-4"><h3>{{ $siteinfos->water }} <h6>meters</h6></h3></div>
+        @if(($siteinfos->rainten >=0 )&&($siteinfos->rainten <=0.9))
+            <div class="col-lg-4"><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainGray"></span></div>
+            @endif
+            @if(($siteinfos->rainten >=1 )&&($siteinfos->rainten <=1.9))
+            <div class="col-lg-4"><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainGreen"></span></div>
+            @endif
+            @if(($siteinfos->rainten >=2 )&&($siteinfos->rainten <=9))
+            <div class="col-lg-4"><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainBlueGreen"></span></div>
+            @endif
+            @if(($siteinfos->rainten >=10 )&&($siteinfos->rainten <=19))
+            <div class="col-lg-4"><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainBlue"></span></div>
+            @endif
+            @if(($siteinfos->rainten >=20 )&&($siteinfos->rainten <=29))
+            <div class="col-lg-4"><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainViolet"></span></div>
+            @endif
+            @if(($siteinfos->rainten >=30 )&&($siteinfos->rainten <=39))
+            <div class="col-lg-4"><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainYellow"></span></div>
+            @endif
+            @if(($siteinfos->rainten >=40 )&&($siteinfos->rainten <=49))
+            <div class="col-lg-4"><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainOrange"></span></div>
+            @endif
+            @if($siteinfos->rainten >=50)
+            <div class="col-lg-4"><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainRed"></span></div>
+            @endif
         <div class="col-lg-4"><h3>     </h3></div>
         @endif
         @if( $siteinfos->sensor == 3 )
-        <div class="col-lg-4"><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3></div>
+        <div class="col-lg-4"><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainGray"></span></div>
         <div class="col-lg-4"><h3>{{ $siteinfos->water }} <h6>meters</h3></div>
         @endif
         <!--comment-->
-
-        <div class="col-lg-4"><h3>{{ $siteinfos->voltage }} <h6>Volts</h6></h3></div>
+        @if($siteinfos->voltage >= 12)
+        <div class="col-lg-4"><h3>{{ $siteinfos->voltage }} <h6>Volts </h6></h3><span class="glyphicon glyphicon-ok CarVoltOK"></div>
+        @endif
+        
+        @if($siteinfos->voltage < 12)
+          <div class="col-lg-4"><h3>{{ $siteinfos->voltage }} <h6>Volts </h6></h3><span class="glyphicon glyphicon-warning-sign CarVoltNot"></span></div>
+        @endif
         <div class="col-xs-12"><h4>DATA AS OF: {{$siteinfos->asof}}</h4></div>
      </div>
       </div>

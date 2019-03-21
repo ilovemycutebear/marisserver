@@ -33,7 +33,7 @@ class RatingCurveController extends Controller
    $article->wlcritical = $request->wlcritical;
    $article->save();
    return back();
-            SELECT *  FROM `logs` WHERE `radiodate` BETWEEN '2018-12-20' AND '2019-01-22' AND `site_id` LIKE '5'
+           // SELECT *  FROM `logs` WHERE `radiodate` BETWEEN '2018-12-20' AND '2019-01-22' AND `site_id` LIKE '5';
         }
 
 

@@ -39,6 +39,7 @@ return array(
     'Illuminate\\' => array($vendorDir . '/laravel/framework/src/Illuminate'),
     'FarhanWazir\\GoogleMaps\\' => array($vendorDir . '/farhanwazir/laravelgooglemaps/src/FarhanWazir/GoogleMaps'),
     'Faker\\' => array($vendorDir . '/fzaninotto/faker/src/Faker'),
+    'Encore\\Admin\\' => array($vendorDir . '/encore/laravel-admin/src'),
     'Dotenv\\' => array($vendorDir . '/vlucas/phpdotenv/src'),
     'Dompdf\\' => array($vendorDir . '/dompdf/dompdf/src'),
     'Doctrine\\Instantiator\\' => array($vendorDir . '/doctrine/instantiator/src/Doctrine/Instantiator'),

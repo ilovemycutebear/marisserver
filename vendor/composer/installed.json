@@ -279,6 +279,68 @@
         "homepage": "https://github.com/dompdf/dompdf"
     },
     {
+        "name": "encore/laravel-admin",
+        "version": "1.3.x-dev",
+        "version_normalized": "1.3.9999999.9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/z-song/laravel-admin.git",
+            "reference": "31266aaef7881d663948a91ea8c2a5417330283d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/z-song/laravel-admin/zipball/31266aaef7881d663948a91ea8c2a5417330283d",
+            "reference": "31266aaef7881d663948a91ea8c2a5417330283d",
+            "shasum": ""
+        },
+        "require": {
+            "laravel/framework": "5.3.*",
+            "php": ">=5.6.4"
+        },
+        "require-dev": {
+            "fzaninotto/faker": "~1.4",
+            "intervention/image": "~2.3",
+            "laravel/laravel": "~5.3",
+            "phpunit/phpunit": "~4.0",
+            "symfony/css-selector": "2.8.*|3.0.*",
+            "symfony/dom-crawler": "2.8.*|3.0.*"
+        },
+        "suggest": {
+            "intervention/image": "Required to handling and manipulation upload images (~2.3).",
+            "spatie/eloquent-sortable": "Required to built orderable gird."
+        },
+        "time": "2017-09-03T10:42:50+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "Encore\\Admin\\": "src/"
+            },
+            "files": [
+                "src/helpers.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "zsong",
+                "email": "zosong@126.com"
+            }
+        ],
+        "description": "laravel admin",
+        "homepage": "https://github.com/z-song/laravel-admin",
+        "keywords": [
+            "admin",
+            "chart",
+            "form",
+            "grid",
+            "laravel"
+        ]
+    },
+    {
         "name": "farhanwazir/laravelgooglemaps",
         "version": "dev-master",
         "version_normalized": "9999999-dev",

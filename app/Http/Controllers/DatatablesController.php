@@ -11,6 +11,8 @@ use App\computedlogs;
 use App\Http\Requests;
 use Yajra\Datatables\Datatables;
 
+use Carbon\Carbon;
+
 
 class DatatablesController extends Controller
 {
@@ -104,8 +106,7 @@ class DatatablesController extends Controller
         public function editalertsdata(){
              
 
-              $users = DB::table('site')
-            ->select(['id','name', 'sitelat', 'sitelong', 'sitelev', 'wlalert', 'wlalarm','wlcritical'])->get();
+              $users = site::all();
 
    
 
@@ -117,18 +118,47 @@ class DatatablesController extends Controller
 
     $article = site::find($request -> siteid);
    $article->name = $request->sitename;
+   $article->subname = $request->subname;
    $article->sitelat = $request->sitelat;
    $article->sitelong = $request->sitelong;
+   $article->sitelev = $request->sitelev;
+   $article->sensortype = $request->sensortype;
    $article->wlalert = $request->wlalert;
    $article->wlalarm = $request->wlalarm;
    $article->wlcritical = $request->wlcritical;
+   $article->created_at = Carbon::now();
+   $article->updated_at =  Carbon::now();
+   $article->pic = $request->pic;
+   $article->Bconstant = $request->Bconstant;
+   $article->Wlevelzero = $request->Wlevelzero;
+   $article->Avariable = $request->Avariable;
    $article->save();
    return back();
+
+   //return $article;
 
         }
     
         public function AddSite(Request $requesta){
-             return $requesta->all();
+            $site = new site();
+            $site->id  = null;
+            $site->name = $requesta->sitename;
+            $site->subname = $requesta->subname;
+            $site->sitelat = $requesta->sitelat;
+            $site->sitelong = $requesta->sitelong;
+            $site->sitelev = $requesta->sitelev;
+            $site->sensortype = $requesta->sensortype;
+            $site->wlalert = $requesta->wlalert;
+            $site->wlalarm = $requesta->wlalarm;
+            $site->wlcritical = $requesta->wlcritical;
+            $site->created_at = Carbon::now();
+            $site->updated_at =  Carbon::now();
+            $site->pic = $requesta->pic;
+            $site->Bconstant = $requesta->Bconstant;
+            $site->Wlevelzero = $requesta->Wlevelzero;
+            $site->Avariable = $requesta->Avariable;
+            $site->save();
+                return back();
         }
   public function AddSiteView()
     {
