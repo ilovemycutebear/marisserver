@@ -36,6 +36,11 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.nopadding {
+   padding-right: 0px;
+   padding-left:  0px;
+   margin: 0 !important;
+}
 .RainGray{
     color: #727882;
     font-size:90px;
@@ -150,6 +155,7 @@ h6{
     
 }
 
+
 h4 { 
     color: #99e6ff;
     font-size :40px;
@@ -188,7 +194,16 @@ h8{
     3px 3px 0 #000000;
     
 }
-
+h9{
+  color: #ffe09e;
+    font-size :60px;
+        text-shadow:
+    -1px -1px 0 #f95cf2,
+    1px -1px 0 #f95cf2,
+    -1px 1px 0 #f95cf2,
+    3px 3px 0 #f95cf2;
+    
+}
 
 h2 { 
     color: #f95cf2;
@@ -199,6 +214,7 @@ h2 {
     -1px 1px 0 #000000,
     3px 3px 0 #000000;
 }
+
   .myCSSClass {
   background:rgba(89, 89, 89, 0.33);
   color: white;
