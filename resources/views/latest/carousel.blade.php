@@ -45,8 +45,8 @@
      </div>
       </div>
     </div>
-   
-    @foreach($latestcrsl as $siteinfos)
+
+    @foreach($jsonfinale as $siteinfos)
     <div class="item ">
      <img src="{{URL::asset('img/pics/'.$siteinfos->pic.'.jpg')}}" alt="ayyy">
       <div class="container">
@@ -130,17 +130,13 @@
             <div class="col-sm-3 "><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainRed"></span></div>
             @endif
         <div class="col-sm-3 "><h3>     </h3></div>
-        <div class="col-sm-3 "><h3>     </h3></div>
+        <div class="col-sm-3"><h3>{{ $siteinfos->discharge }}</h3></div>
         @endif
         @if( $siteinfos->sensor == 3 )
         <div class="col-sm-3 text-left"><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainGray"></span></div>
         <div class="col-sm-3 "><h3>{{ $siteinfos->water }} <h6>meters</h3></div>
 
-        <div class="col-sm-3"><h3><?php 
-
- echo(round(pow($siteinfos->powone, $siteinfos->Avariable),2)); 
-
-?></h3></div>
+        <div class="col-sm-3"><h3>{{ $siteinfos->discharge }}</h3></div>
         @endif
         <!--comment-->
         @if($siteinfos->voltage >= 12)

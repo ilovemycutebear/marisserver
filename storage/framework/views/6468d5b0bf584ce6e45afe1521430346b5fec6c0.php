@@ -40,8 +40,8 @@
      </div>
       </div>
     </div>
-   
-    <?php $__currentLoopData = $latestcrsl; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $siteinfos): $__env->incrementLoopIndices(); $loop = $__env->getFirstLoop(); ?>
+
+    <?php $__currentLoopData = $jsonfinale; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $siteinfos): $__env->incrementLoopIndices(); $loop = $__env->getFirstLoop(); ?>
     <div class="item ">
      <img src="<?php echo e(URL::asset('img/pics/'.$siteinfos->pic.'.jpg')); ?>" alt="ayyy">
       <div class="container">
@@ -125,17 +125,13 @@
             <div class="col-sm-3 "><h3><?php echo e($siteinfos->rainten); ?> <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainRed"></span></div>
             <?php endif; ?>
         <div class="col-sm-3 "><h3>     </h3></div>
-        <div class="col-sm-3 "><h3>     </h3></div>
+        <div class="col-sm-3"><h3><?php echo e($siteinfos->discharge); ?></h3></div>
         <?php endif; ?>
         <?php if( $siteinfos->sensor == 3 ): ?>
         <div class="col-sm-3 text-left"><h3><?php echo e($siteinfos->rainten); ?> <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainGray"></span></div>
         <div class="col-sm-3 "><h3><?php echo e($siteinfos->water); ?> <h6>meters</h3></div>
 
-        <div class="col-sm-3"><h3><?php 
-
- echo(round(pow($siteinfos->powone, $siteinfos->Avariable),2)); 
-
-?></h3></div>
+        <div class="col-sm-3"><h3><?php echo e($siteinfos->discharge); ?></h3></div>
         <?php endif; ?>
         <!--comment-->
         <?php if($siteinfos->voltage >= 12): ?>

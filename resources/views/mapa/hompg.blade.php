@@ -29,55 +29,55 @@
     //##################################ICONS##################################################
                 var icnormal = L.icon({
         iconUrl:  "{{URL::asset('img/marker/normal.png')}}",
-        iconSize: [25,25],
+        iconSize: [70,70],
         iconAnchor: [5, 20], // horizontal puis vertical
     });
              var icnalarm = L.icon({
     
         iconUrl:  "{{URL::asset('img/marker/alarm.png')}}",
-        iconSize: [25,25],
+        iconSize: [70,70],
         iconAnchor: [5, 20], // horizontal puis vertical
     
     });
         var icnalert = L.icon({
   
         iconUrl:  "{{URL::asset('img/marker/alert.png')}}",
-        iconSize: [25,25],
+        iconSize: [70,70],
         iconAnchor: [5, 20], // horizontal puis vertical
     
     });
     var icncritical = L.icon({
  
         iconUrl:  "{{URL::asset('img/marker/critical.png')}}",
-        iconSize: [25,25],
+        iconSize: [70,70],
         iconAnchor: [5, 20], // horizontal puis vertical
     
     });
    var icndatadown = L.icon({
 
         iconUrl:  "{{URL::asset('img/marker/datadown.png')}}",
-        iconSize: [25,25],
+        iconSize: [70,70],
         iconAnchor: [5, 20], // horizontal puis vertical
     
     });
    var icndatanc = L.icon({
   
         iconUrl:  "{{URL::asset('img/marker/datanc.png')}}",
-        iconSize: [25,25],
+        iconSize: [70,70],
         iconAnchor: [5, 20], // horizontal puis vertical
     
     });
     var icndataup = L.icon({
   
         iconUrl:  "{{URL::asset('img/marker/dataup.png')}}",
-        iconSize: [25,25],
+        iconSize: [70,70],
         iconAnchor: [5, 20], // horizontal puis vertical
     
     });
    var icnodata = L.icon({
 
         iconUrl:  "{{URL::asset('img/marker/nodata.png')}}",
-        iconSize: [25,25],
+        iconSize: [70,70],
         iconAnchor: [5, 20], // horizontal puis vertical
     });
     //##################################ICONS##################################################
@@ -120,56 +120,56 @@
             var blgrndrp = L.icon({
 
         iconUrl:  "{{URL::asset('img/marker/0119.png')}}",
-        iconSize: [20,25],
+        iconSize: [70,70],
         iconAnchor: [5, 20], // horizontal puis vertical
     
     });
         var rddrp = L.icon({
 
         iconUrl:  "{{URL::asset('img/marker/5h5h9.png')}}",
-        iconSize: [20,25],
+        iconSize: [70,70],
         iconAnchor: [5, 20], // horizontal puis vertical
     
     });
     var bldrp = L.icon({
 
         iconUrl:  "{{URL::asset('img/marker/1h1h9.png')}}",
-        iconSize: [20,25],
+        iconSize: [70,70],
         iconAnchor: [5, 20], // horizontal puis vertical
     
     });
    var vltdrp = L.icon({
 
         iconUrl:  "{{URL::asset('img/marker/2h2h9.png')}}",
-        iconSize: [20,25],
+        iconSize: [70,70],
         iconAnchor: [5, 20], // horizontal puis vertical
     
     });
    var ylwdrp = L.icon({
 
         iconUrl:  "{{URL::asset('img/marker/3h3h9.png')}}",
-        iconSize: [20,25],
+        iconSize: [70,70],
         iconAnchor: [5, 20], // horizontal puis vertical
     
     });
     var orngdrp = L.icon({
 
         iconUrl:  "{{URL::asset('img/marker/4h4h9.png')}}",
-        iconSize: [20,25],
+        iconSize: [70,70],
         iconAnchor: [5, 20], // horizontal puis vertical
     
     });
    var skbldrp = L.icon({
 
         iconUrl:  "{{URL::asset('img/marker/2099.png')}}",
-        iconSize: [20,25],
+        iconSize: [70,70],
         iconAnchor: [5, 20], // horizontal puis vertical
     
     });
 var grydrp = L.icon({
 
         iconUrl:  "{{URL::asset('img/marker/norf.png')}}",
-        iconSize: [20,25],
+        iconSize: [70,70],
         iconAnchor: [5, 20], // horizontal puis vertical
     
     });
@@ -178,56 +178,56 @@ var grydrp = L.icon({
  var blgrndrpv = L.icon({
     
         iconUrl:  "{{URL::asset('img/marker/0119v.png')}}",
-        iconSize: [20,25],
+        iconSize: [70,70],
         iconAnchor: [5, 20], // horizontal puis vertical
     
     });
         var rddrpv = L.icon({
    
         iconUrl:  "{{URL::asset('img/marker/5h5h9v.png')}}",
-        iconSize: [20,25],
+        iconSize: [70,70],
         iconAnchor: [5, 20], // horizontal puis vertical
     
     });
     var bldrpv = L.icon({
   
         iconUrl:  "{{URL::asset('img/marker/1h1h9v.png')}}",
-        iconSize: [20,25],
+        iconSize: [70,70],
         iconAnchor: [5, 20], // horizontal puis vertical
     
     });
    var vltdrpv = L.icon({
   
         iconUrl:  "{{URL::asset('img/marker/2h2h9v.png')}}",
-        iconSize: [20,25],
+        iconSize: [70,70],
         iconAnchor: [5, 20], // horizontal puis vertical
     
     });
    var ylwdrpv = L.icon({
   
         iconUrl:  "{{URL::asset('img/marker/3h3h9v.png')}}",
-        iconSize: [20,25],
+        iconSize: [70,70],
         iconAnchor: [5, 20], // horizontal puis vertical
     
     });
     var orngdrpv = L.icon({
  
         iconUrl:  "{{URL::asset('img/marker/4h4h9v.png')}}",
-        iconSize: [20,25],
+        iconSize: [70,70],
         iconAnchor: [5, 20], // horizontal puis vertical
     
     });
    var skbldrpv = L.icon({
   
         iconUrl:  "{{URL::asset('img/marker/2099v.png')}}",
-        iconSize: [20,25],
+        iconSize: [70,70],
         iconAnchor: [5, 20], // horizontal puis vertical
     
     });
 var grydrpv = L.icon({
 
         iconUrl:  "{{URL::asset('img/marker/norfv.png')}}",
-        iconSize: [20,25],
+        iconSize: [70,70],
         iconAnchor: [5, 20], // horizontal puis vertical
     
     });

@@ -24,9 +24,83 @@ class CarouselController extends Controller
 		
 		
 
-		return view('latest.carousel',compact('latestcrsl'));
+		//return view('latest.carousel',compact('latestcrsl'));
 		//return $latestcrsl;
-		//return $latestcrsl;
+		//dd($latestcrsl);
+		$alldata = array();
+		  foreach($latestcrsl as $r){
+		  				/*echo($r->Site);
+		  				echo($r->subname);
+		  				echo($r->pic);
+		  				echo($r->lattitude);
+		  				echo($r->longtitude);
+		  				echo($r->rainten);
+		  				echo($r->water);
+		  				echo($r->asof);
+		  				echo($r->voltage);
+		  				echo($r->sensor);
+		  				echo($r->powone);
+		  				echo($r->Avariable);
+		  				echo($r->siteid);*/
+		  				$discharge = round(pow($r->powone, $r->Avariable),2);
+		  				if(is_nan($discharge)){
+
+		  					$discharge = 'NaN';
+		  				}
+		  				if(is_infinite(floatval($discharge))){
+
+		  					$discharge = 'INF';
+		  				}
+		  				//$dischargeb = bcpow($r->powone, $r->Avariable);
+		  				//$dischargeb = round((floatval($r->powone)**floatval($r->Avariable)),2);
+		  			/*array_push($alldata, array(
+		  				"Site" => $r->Site,
+		  				"subname" => $r->subname,
+		  				"pic"=> $r->pic,
+						"lattitude"=> $r->lattitude,
+						"longtitude"=> $r->longtitude,
+						"rainten"=> $r->rainten,
+						"water"=> $r->water,
+						"asof"=> $r->asof,
+						"voltage"=> $r->voltage,
+						"sensor"=> $r->sensor,
+						"powone"=> $r->powone,
+						"Avariable"=> $r->Avariable,
+						"siteid"=> $r->siteid,
+    					//"discharge" => $discharge
+
+		  			));*/
+		  			array_push($alldata, array(
+		  				"Site" => $r->Site,
+		  				"subname" => $r->subname,
+		  				"pic"=> $r->pic,
+						"lattitude"=> $r->lattitude,
+						"longtitude"=> $r->longtitude,
+						"rainten"=> $r->rainten,
+						"water"=> $r->water,
+						"asof"=> $r->asof,
+						"voltage"=> $r->voltage,
+						"sensor"=> $r->sensor,
+						"powone"=> $r->powone,
+						"Avariable"=> $r->Avariable,
+						"siteid"=> $r->siteid,
+    					"discharge" => (string)$discharge
+		  			));
 		
-				}
+		  
+
+
+		}
+
+
+		
+	
+		 $jsonified = json_encode($alldata);
+		 $jsonfinale = json_decode($jsonified);
+
+     	//dd(json_encode($jsonfinale));
+		return view('latest.carousel',compact('jsonfinale'));
+		
+			
+									}
 }

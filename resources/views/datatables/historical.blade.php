@@ -9,6 +9,8 @@
     
       <!-- Modal content-->
       <div class="modal-content" >
+       
+
         <div class="modal-body">
         <!--*********TABS**************-->
         <ul class="nav nav-tabs" id="myTab">
@@ -112,7 +114,7 @@
     $( document ).ready(function() {
     drawlatestablern();
     drawlatestablewl();
-
+     $("#hstpicker" ).daterangepicker();
    
 
 });

@@ -6,6 +6,8 @@
     
       <!-- Modal content-->
       <div class="modal-content" >
+       
+
         <div class="modal-body">
         <!--*********TABS**************-->
         <ul class="nav nav-tabs" id="myTab">
@@ -18,6 +20,16 @@
         <div class="tab-pane active" id="table">
        <!--*********TABLES**************-->
        <div id="control_label" class="alert-info text-center"><h1>TABLE INFORMATION</h1></div>
+         <label for="csv_file" class="col-md-4 control-label">DATE RANGE FOR SPECIFIC DATES</label>
+
+                                <div class="col-md-6">
+
+                                   <input type="text" id="hstpicker" />
+
+                                </div>
+        <button type="submit" class="btn ">UPDATE</button>
+        <!--specific date-->
+        <!--specific date-->
         <table class="table table-bordered" id="users-table">
         <thead>
             <tr>
@@ -109,7 +121,7 @@
     $( document ).ready(function() {
     drawlatestablern();
     drawlatestablewl();
-
+     $("#hstpicker" ).daterangepicker();
    
 
 });

@@ -67,7 +67,23 @@ Route::get('wllatestdata', 'LatestController@wlgetlatestdata');
 Route::get('wlhourlydata', 'LatestController@wlgethourlydata');
 Route::get('dttbldetails', 'historicalController@wlgetsitedata');
 Route::get('dttbldetailsrn', 'historicalController@rngetsitedata');
+
+
 Route::get('hstry', 'historicalController@hstry');
+Route::post('hstry/update', 'historicalController@showhstry');
+Route::post('hstry/chart', 'ChartController@postChartProcess');
+
+Route::get('hstrywlevel', 'historicalController@hstrywlevel');
+Route::post('hstryelevel/update', 'historicalController@showhstry');
+Route::post('hstrywlevel/chartlvl', 'ChartController@postChartProcessLevel');
+Route::post('hstrywlevel/chartdsc', 'ChartController@postChartProcessDischarge');
+
+Route::get('hstrycombo', 'historicalController@hstrycombo');
+Route::post('hstrycombo/update', 'historicalController@showhstry');
+Route::post('hstrycombo/chartrn', 'ChartController@postChartProcess');
+Route::post('hstrycombo/chartlvl', 'ChartController@postChartProcessLevel');
+Route::post('hstrycombo/chartdsc', 'ChartController@postChartProcessDischarge');
+
 
 Route::get('tabs/{tabid}', 'TabController@getLaraTab');
 //Route::get('/datatables/orders', array('auth', 'uses' => 'ProfileController@anyOrders'))->name('datatables.dataOrders');

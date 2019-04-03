@@ -31,7 +31,7 @@
     <style type="text/css">
         body{
     height: 100%;
-    padding-top: 40px;
+    padding-top: 30px;
     background-image: url("{{URL::asset('img/background.jpg')}}");
     background-repeat: no-repeat;
     background-size: cover;
@@ -344,7 +344,14 @@ a.solink:hover {
 table.dataTable thead tr {
   background-color: #f49542;
 }
-
+.modal-dialog{
+    position: relative;
+    display: table; 
+    overflow-y: auto;    
+    overflow-x: auto;
+    width:1000px;
+    height:700px; 
+}
 
 /*navbar customization*/
     </style>
@@ -376,13 +383,13 @@ table.dataTable thead tr {
                 <a href="{{ url('dttblview') }}">TABLES</a>
             </li>
             <li class="{{ Request::is('hstry') ? 'active' : '' }}">
-                <a href="{{ url('hstry') }}">HISTORICAL</a>
+                <a href="{{ url('hstry') }}">RAIN HISTORICAL</a>
             </li>
-            <li class="{{ Request::is('rtcurve') ? 'active' : '' }}">
-                <a href="{{ url('rtcurve') }}">RATING CURVE GEN</a>
+            <li class="{{ Request::is('hstrywlevel') ? 'active' : '' }}">
+                <a href="{{ url('hstrywlevel') }}">LEVEL HISTORICAL</a>
             </li>
-            <li class="{{ Request::is('rtcurvepcker') ? 'active' : '' }}">
-                <a href="{{ url('rtcurvepcker') }}">RATING CURVE</a>
+            <li class="{{ Request::is('hstrycombo') ? 'active' : '' }}">
+                <a href="{{ url('hstrycombo') }}">COMBO HISTORICAL</a>
             </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
@@ -438,9 +445,11 @@ table.dataTable thead tr {
 <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
 <script src="{{URL::asset('js/leaflet.ajax.min.js')}}"></script>
 
+
+
 <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-
+<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
  @stack('map-scripts')
 
