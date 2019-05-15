@@ -88,13 +88,7 @@
 <br />
 <br />
 
-                            <div class="form-group">
-                                <div class="col-md-6">
-                                   <button type="submit" class="btn btn-primary" id="isubmit">
-                                        SUBMIT
-                                    </button>
-                                </div>
-                            </div>
+                           
                             
 
 

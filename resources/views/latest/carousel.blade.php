@@ -31,7 +31,7 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner ">
     <div class="item active ">
-      <img src="{{URL::asset('img/pics/2.jpg')}}" alt="ayyy">
+      <img src="{{URL::asset('img/pics/main.jpg')}}" alt="ayyy">
       <div class="container ">
       <div class="row carousel-caption ">
         <div class="col-xs-12 text-center"><h5>NIA MARIIS</h5></div>
@@ -77,28 +77,28 @@
 
         @if( $siteinfos->sensor == 1 )
             @if(($siteinfos->rainten >=0 )&&($siteinfos->rainten <=0.9))
-            <div class="col-sm-3 text-left"><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainGray"></span></div>
+            <div class="col-sm-3 text-left"><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><div class="glyphicon-ring glyphicon-gray"><br><br><span class="glyphicon glyphicon-tint RainGray"></span></div></div>
             @endif
             @if(($siteinfos->rainten >=1 )&&($siteinfos->rainten <=1.9))
-            <div class="col-sm-3 text-left"><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainGreen"></span></div>
+            <div class="col-sm-3 text-left"><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><div class="glyphicon-ring glyphicon-gray"><br><br><span class="glyphicon glyphicon-tint RainGreen"></span></div></div>
             @endif
             @if(($siteinfos->rainten >=2 )&&($siteinfos->rainten <=9))
-            <div class="col-sm-3 text-left"><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainBlueGreen"></span></div>
+            <div class="col-sm-3 text-left"><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><div class="glyphicon-ring glyphicon-gray"><br><br><span class="glyphicon glyphicon-tint RainBlueGreen"></span></div></div>
             @endif
             @if(($siteinfos->rainten >=10 )&&($siteinfos->rainten <=19))
-            <div class="col-sm-3 text-left"><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainBlue"></span></div>
+            <div class="col-sm-3 text-left"><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><div class="glyphicon-ring glyphicon-gray"><br><br><span class="glyphicon glyphicon-tint RainBlue"></span></div></div>
             @endif
             @if(($siteinfos->rainten >=20 )&&($siteinfos->rainten <=29))
-            <div class="col-sm-3 text-left"><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainViolet"></span></div>
+            <div class="col-sm-3 text-left"><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><div class="glyphicon-ring glyphicon-gray"><br><br><span class="glyphicon glyphicon-tint RainViolet"></span></div></div>
             @endif
             @if(($siteinfos->rainten >=30 )&&($siteinfos->rainten <=39))
-            <div class="col-sm-3 text-left"><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainYellow"></span></div>
+            <div class="col-sm-3 text-left"><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><div class="glyphicon-ring glyphicon-gray"><br><br><span class="glyphicon glyphicon-tint RainYellow"></span></div></div>
             @endif
             @if(($siteinfos->rainten >=40 )&&($siteinfos->rainten <=49))
-            <div class="col-sm-3 text-left"><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainOrange"></span></div>
+            <div class="col-sm-3 text-left"><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><div class="glyphicon-ring glyphicon-gray"><br><br><span class="glyphicon glyphicon-tint RainOrange"></span></div></div>
             @endif
             @if($siteinfos->rainten >=50)
-            <div class="col-sm-3 text-left"><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainRed"></span></div>
+            <div class="col-sm-3 text-left"><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><div class="glyphicon-ring glyphicon-gray"><br><br><span class="glyphicon glyphicon-tint RainRed"></span></div></div>
             @endif
         <div class="col-sm-3 "><h3>       </h3></div>
         <div class="col-sm-3 "><h3>       </h3></div>
@@ -106,45 +106,45 @@
 
         @if( $siteinfos->sensor == 2 )
         @if(($siteinfos->rainten >=0 )&&($siteinfos->rainten <=0.9))
-            <div class="col-sm-3 "><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainGray"></span></div>
+            <div class="col-sm-3 "><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><div class="glyphicon-ring glyphicon-gray"><br><br><span class="glyphicon glyphicon-tint RainGray"></span></div></div>
             @endif
             @if(($siteinfos->rainten >=1 )&&($siteinfos->rainten <=1.9))
-            <div class="col-sm-3 "><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainGreen"></span></div>
+            <div class="col-sm-3 "><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><div class="glyphicon-ring glyphicon-gray"><br><br><span class="glyphicon glyphicon-tint RainGreen"></span></div></div>
             @endif
             @if(($siteinfos->rainten >=2 )&&($siteinfos->rainten <=9))
-            <div class="col-sm-3 "><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainBlueGreen"></span></div>
+            <div class="col-sm-3 "><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><div class="glyphicon-ring glyphicon-gray"><br><br><span class="glyphicon glyphicon-tint RainBlueGreen"></span></div></div>
             @endif
             @if(($siteinfos->rainten >=10 )&&($siteinfos->rainten <=19))
-            <div class="col-sm-3 "><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainBlue"></span></div>
+            <div class="col-sm-3 "><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><div class="glyphicon-ring glyphicon-gray"><br><br><span class="glyphicon glyphicon-tint RainBlue"></span></div></div>
             @endif
             @if(($siteinfos->rainten >=20 )&&($siteinfos->rainten <=29))
-            <div class="col-sm-3 "><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainViolet"></span></div>
+            <div class="col-sm-3 "><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><div class="glyphicon-ring glyphicon-gray"><br><br><span class="glyphicon glyphicon-tint RainViolet"></span></div></div>
             @endif
             @if(($siteinfos->rainten >=30 )&&($siteinfos->rainten <=39))
-            <div class="col-sm-3 "><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainYellow"></span></div>
+            <div class="col-sm-3 "><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><div class="glyphicon-ring glyphicon-gray"><br><br><span class="glyphicon glyphicon-tint RainYellow"></span></div></div>
             @endif
             @if(($siteinfos->rainten >=40 )&&($siteinfos->rainten <=49))
-            <div class="col-sm-3 "><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainOrange"></span></div>
+            <div class="col-sm-3 "><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><div class="glyphicon-ring glyphicon-gray"><br><br><span class="glyphicon glyphicon-tint RainOrange"></span></div></div>
             @endif
             @if($siteinfos->rainten >=50)
-            <div class="col-sm-3 "><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainRed"></span></div>
+            <div class="col-sm-3 "><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><div class="glyphicon-ring glyphicon-gray"><br><br><span class="glyphicon glyphicon-tint RainRed"></span></div></div>
             @endif
         <div class="col-sm-3 "><h3>     </h3></div>
         <div class="col-sm-3"><h3>{{ $siteinfos->discharge }}</h3></div>
         @endif
         @if( $siteinfos->sensor == 3 )
-        <div class="col-sm-3 text-left"><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><span class="glyphicon glyphicon-tint RainGray"></span></div>
+        <div class="col-sm-3 text-left"><h3>{{ $siteinfos->rainten }} <h6>milimeters</h6></h3><div class="glyphicon-ring glyphicon-gray"><br><br><span class="glyphicon glyphicon-tint RainGray"></span></div></div>
         <div class="col-sm-3 "><h3>{{ $siteinfos->water }} <h6>meters</h3></div>
 
         <div class="col-sm-3"><h3>{{ $siteinfos->discharge }}</h3></div>
         @endif
         <!--comment-->
         @if($siteinfos->voltage >= 12)
-        <div class="col-sm-3 text-right"><h3>{{ $siteinfos->voltage }} <h6>Volts </h6></h3><span class="glyphicon glyphicon-ok CarVoltOK"></div>
+        <div class="col-sm-3 text-right"><h3>{{ $siteinfos->voltage }} <h6>Volts </h6></h3><div class="glyphicon-ring glyphicon-gray"><br><br><span class="glyphicon glyphicon-ok CarVoltOK"></span></div></div>
         @endif
         
         @if($siteinfos->voltage < 12)
-          <div class="col-sm-3 text-right"><h3>{{ $siteinfos->voltage }} <h6>Volts </h6></h3><span class="glyphicon glyphicon-warning-sign CarVoltNot"></span></div>
+          <div class="col-sm-3 text-right"><h3>{{ $siteinfos->voltage }} <h6>Volts </h6></h3><div class="glyphicon-ring glyphicon-gray"><br><br><span class="glyphicon glyphicon-warning-sign CarVoltNot"></span></div></div>
         @endif
         <div class="col-xs-12"><h4>DATA AS OF: {{$siteinfos->asof}}</h4></div>
      </div>

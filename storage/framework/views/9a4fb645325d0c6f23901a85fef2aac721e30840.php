@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="refresh" content="600">
         <title>MARIIS FFWS</title>
         <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="//cdn.datatables.net/1.10.8/css/jquery.dataTables.min.css">
@@ -214,7 +215,18 @@ h2 {
     -1px 1px 0 #000000,
     3px 3px 0 #000000;
 }
-
+.glyphicon-gray {
+  background: black;
+}
+.glyphicon-ring {
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  border: 4px solid white;
+  color: white;
+  display: inline-table;
+  text-align: center;
+}
   .myCSSClass {
   background:rgba(89, 89, 89, 0.33);
   color: white;
