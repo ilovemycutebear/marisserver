@@ -162,7 +162,7 @@
 
                   <div class='form-group'>
       <div class='col-sm-3 col-md-3 col-lg-3 text-right' style='padding-top:7px;'>
-      <label for='B_CONSTANT'>B_CONSTANT</label>
+      <label for='B_CONSTANT'>B_VARIABLE</label>
       </div>
       <div class='col-sm-9 col-md-9 col-lg-9 plchldrnamen'>
       
@@ -367,7 +367,7 @@
 
                   <div class='form-group'>
       <div class='col-sm-3 col-md-3 col-lg-3 text-right' style='padding-top:7px;'>
-      <label for='B_CONSTANT'>B_CONSTANT</label>
+      <label for='B_CONSTANT'>B_VARIABLE</label>
       </div>
       <div class='col-sm-9 col-md-9 col-lg-9 plchldrnamen'>
       
@@ -446,7 +446,7 @@ function edittableofInfo(){
            { "data": 'created_at', "name": 'created_at', "title":'CREATED_AT' },
            { "data": 'updated_at', "name": 'updated_at', "title":'UPDATED_AT' },
            { "data": 'pic', "name": 'pic', "title":'PIC' },
-           { "data": 'Bconstant', "name": 'Bconstant', "title":'B_CONSTANT' },
+           { "data": 'Bconstant', "name": 'Bconstant', "title":'B_VARIABLE' },
            { "data": 'Wlevelzero', "name": 'Wlevelzero', "title":'WLEVEL_ZERO' },
            { "data": 'Avariable', "name": 'Avariable', "title":'A_VARIABLE' },
         ],

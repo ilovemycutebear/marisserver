@@ -80,7 +80,7 @@ public function hstry(){
   	$splitId = $splitInfo[1];
 
    			
-    $hstoricalselect = DB::Select("SELECT site.name as Site,site.subname as subname, site.pic as pic,site.sitelat as lattitude ,site.sitelong as longtitude,FORMAT(logs.rvalue, 2)as rainten,FORMAT((site.sitelev+20-logs.wlevel),2) as water,logs.created_at as asof,FORMAT(logs.batteryvolt,2) as voltage,logs.wlevel as rawlvl,site.sensortype as sensor, @powa := FORMAT(site.Bconstant*((FORMAT((site.sitelev+20-logs.wlevel),2)-Wlevelzero)),2) as powone,site.Avariable as Avariable, logs.site_id as siteid FROM site INNER JOIN logs on site.id=logs.site_id WHERE site.id='".$splitId."' AND logs.created_at BETWEEN '".$startDate."' AND '".$endDate."'");
+    $hstoricalselect = DB::Select("SELECT site.name as Site,site.subname as subname, site.pic as pic,site.sitelat as lattitude ,site.sitelong as longtitude,FORMAT(logs.rvalue, 2)as rainten,FORMAT((site.sitelev-logs.wlevel),2) as water,logs.created_at as asof,FORMAT(logs.batteryvolt,2) as voltage,logs.wlevel as rawlvl,site.sensortype as sensor, @powa := FORMAT(site.Bconstant*((FORMAT((site.sitelev-logs.wlevel),2)-Wlevelzero)),2) as powone,site.Avariable as Avariable, logs.site_id as siteid FROM site INNER JOIN logs on site.id=logs.site_id WHERE site.id='".$splitId."' AND logs.created_at BETWEEN '".$startDate."' AND '".$endDate."'");
 
    // $historicalparsed['data'] = $hstoricalselect;
 
